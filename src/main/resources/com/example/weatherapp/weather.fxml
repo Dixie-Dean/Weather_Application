@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="444.0" style="-fx-background-color: #333; -fx-border-color: black; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weatherapp.WeatherController">
+   <children>
+      <Label alignment="CENTER" prefHeight="86.0" prefWidth="444.0" style="-fx-background-color: black;" text="Weather App" textFill="#8dbc42">
+         <font>
+            <Font name="Monospaced Bold" size="42.0" />
+         </font>
+      </Label>
+      <TextField fx:id="city" alignment="CENTER" layoutX="39.0" layoutY="127.0" onAction="#setCity" prefHeight="56.0" prefWidth="345.0" promptText="City">
+         <font>
+            <Font name="Monospaced Regular" size="21.0" />
+         </font>
+      </TextField>
+      <Text fx:id="temperature" fill="WHITE" layoutX="39.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature:" wrappingWidth="365.13671875">
+         <font>
+            <Font name="Monospaced Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="humidity" fill="WHITE" layoutX="39.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Humidity:" wrappingWidth="365.13671875">
+         <font>
+            <Font name="Monospaced Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="feelsLike" fill="WHITE" layoutX="40.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feels Like:" wrappingWidth="365.13671875">
+         <font>
+            <Font name="Monospaced Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="pressure" fill="WHITE" layoutX="39.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pressure:" wrappingWidth="365.13671875">
+         <font>
+            <Font name="Monospaced Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="errorMessage" fill="#ffd900" layoutX="39.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="345.0">
+         <font>
+            <Font name="Monospaced Italic" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
