@@ -14,8 +14,8 @@ import java.net.URL;
 import java.net.URLConnection;
 
 public class WeatherController {
-    private static final String LINK = "https://api.openweathermap.org/data/2.5/weather?q=";
-    private static final String API = "&appid=b703ddc78950879d37132312332b1470";
+    private static final String LINK = "";
+    private static final String API = "";
     private static final String UNITS = "&units=metric";
 
     @FXML
